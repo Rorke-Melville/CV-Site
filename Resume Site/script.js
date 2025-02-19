@@ -100,8 +100,6 @@ function animate() {
 }
 animate(); // Start the animation
 
-
-
 // Select the navbar element
 const navbar = document.getElementById('custom-navbar');
 
@@ -179,6 +177,21 @@ document.addEventListener("DOMContentLoaded", () => {
       aboutContent.classList.add('active');
     }, 500); // Delay to ensure the wobble effect completes
   });
+
+  // New functionality: Show 'About Me' when scrolled into view
+  function handleScroll() {
+    const rect = aboutSection.getBoundingClientRect();
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+    if (rect.top <= viewportHeight / 2) {
+      aboutSection.classList.add('active');
+      // Remove the scroll event listener once the section becomes visible
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }
+
+  // Add scroll event listener
+  window.addEventListener('scroll', handleScroll);
 });
 
 // Before-and-After Sliders

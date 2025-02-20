@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rorke Melville</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <canvas id="backgroundCanvas"></canvas>
+  <!-- Navigation Bar -->
+  <nav class="custom-navbar d-flex align-items-center justify-content-between" id="custom-navbar">
+    <!-- Offcanvas Toggle Button (Burger Menu) -->
+      <a class="btn" data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas">
+        <i class="fa-solid fa-bars" style="color: white; font-size: medium;"></i>
+      </a>
+    <ul class="nav-links">
+      <li><a href="mailto:rorkemelville2@gmail.com"><i class="fa fa-envelope"></i> Email Me</a></li>
+      <li><a href="https://www.linkedin.com/in/rorke-melville/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+      <li><a href="https://github.com/Rorke-Melville" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
+      <li><a href="tel:+27832297305"><i class="fa fa-phone"></i> 083 229 7305</a></li>
+    </ul>
+  </nav>
+
+<!-- Offcanvas Content -->
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvas">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="nav flex-column">
+      <div class="offcanvas-li"><li><a class="dropdown-item" href="#about">About Me</a></li></div>
+      <div class="offcanvas-li"><li><a class="dropdown-item" href="#skills">Skills</a></li></div>
+      <div class="offcanvas-li"><li><a class="dropdown-item" href="#experience">Experience</a></li></div>
+      <div class="offcanvas-li"><li><a class="dropdown-item" href="#education">Education</a></li></div>
+      <div class="offcanvas-li"><li><a class="dropdown-item" href="#projects">Projects</a></li></div>
+      <div class="offcanvas-li"><li><a class="dropdown-item" href="#videos">Videos</a></li></div>
+      <div class="offcanvas-li"><li><a class="dropdown-item" href="#contact">Contact</a></li></div>
+    </ul>
+  </div>
+</div>
+<!-- Hero Section -->
+  <section id="hero" class="p-3">
+    <div class="container-fluid">
+      <div class="row g-0">
+        <!-- Left Column for Text -->
+        <div class="col-md-8 p-4">
+          <div class="hero-content">
+            <h1 class="typewriter display-3 col-8"></h1>
+            <p class="typewriter col-8"></p>
+            <div class="col-8">
+              <a href="#about" class="btn btn-primary btn-learn col-6" id="learn-more-btn">Learn More About Me</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column for Image -->
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+          <img src="assets/f3848e99-b88a-4b10-8824-cb5891e48fdf.webp" alt="Profile Picture" class="rounded-circle img-fluid" style="max-width: 80%;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <p>I am a creative, vibrant, and positive individual who believes deeply in the power of honesty, teamwork, and lifelong learning. My journey has been shaped by a combination of diverse experiences and a strong set of values that guide me both personally and professionally. I approach every challenge with enthusiasm, an open mind, and a commitment to continuous improvement, always striving to learn from others—especially those with more experience—and contribute meaningfully to any team or project.</p>
+      <p>While working as a Junior Web Developer at Gelmar, I’ve had the opportunity to dive into the world of web development and user experience optimization, mastering technologies like Adobe Magento 2 along the way. This role has reinforced my belief in the importance of delivering value through creativity and problem-solving. Prior to this, my roles as a sports coach and store manager in my dad’s bicycle shop taught me the significance of patience, leadership, and maintaining a positive attitude even in challenging situations. These experiences have instilled in me a deep appreciation for collaboration, attention to detail, and the joy of helping others grow.</p>
+      <p>Beyond my professional life, I’m a music lover who enjoys spending time with friends playing sports and engaging in activities that keep me active and connected. Creativity is at the core of everything I do, whether it's solving complex problems or finding innovative ways to improve processes. I believe that being honest, authentic, and supportive fosters trust and productivity, which are essential in any environment.</p>
+      <p>Now, I’m eager to take the next step in my career and explore new areas within the IT industry, such as software development and full-stack development. I thrive in dynamic environments where I can quickly pick up new skills, embrace challenges, and embark on exciting adventures. With a proven ability to adapt and learn rapidly, I’m confident in my capacity to make meaningful contributions to any organization while continuing to grow as a developer and as a person.</p>
+      <p>In summary, I’m not just looking for a job—I’m seeking a new chapter filled with opportunities to expand my knowledge, collaborate with talented professionals, and push the boundaries of what I can achieve. If you’re looking for someone who brings energy, curiosity, and a passion for excellence, I’d be thrilled to join your team.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <!-- Software Development -->
+    <div class="accordion">
+      <button class="accordion-header">Software Development</button>
+      <div class="accordion-content">
+        <div class="skill-chart">
+          <div class="progress" role="progressbar" aria-label="User Interface Design" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%; background-color: var(--percentage-color);">
+            <span>User Interface Design</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="JavaScript" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%; background-color: var(--percentage-color);">
+            <span>JavaScript</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="KnockoutJS" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 55%; background-color: var(--percentage-color);">
+            <span>KnockoutJS</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="HTML" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%; background-color: var(--percentage-color);">
+            <span>HTML</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Command Line" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%; background-color: var(--percentage-color);">
+            <span>Command Line</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="PHP" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%; background-color: var(--percentage-color);">
+            <span>PHP</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Linux" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%; background-color: var(--percentage-color);">
+            <span>Linux</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="SQL" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%; background-color: var(--percentage-color);">
+            <span>SQL</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="jQuery" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%; background-color: var(--percentage-color);">
+            <span>jQuery</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="CSS" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%; background-color: var(--percentage-color);">
+            <span>CSS</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Angular" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%; background-color: var(--percentage-color);">
+            <span>Angular</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Magento" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%; background-color: var(--percentage-color);">
+            <span>Magento</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Node.js" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%; background-color: var(--percentage-color);">
+            <span>Node.js</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="C#" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%; background-color: var(--percentage-color);">
+            <span>Bootstrap</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="C#" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%; background-color: var(--percentage-color);">
+            <span>C#</span>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Business & Process -->
+    <div class="accordion">
+      <button class="accordion-header">Business & Process</button>
+      <div class="accordion-content">
+        <div class="skill-chart">
+          <div class="progress" role="progressbar" aria-label="Business Process" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%; background-color: var(--percentage-color);">
+            <span>Business Process</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="SDLC" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%; background-color: var(--percentage-color);">
+            <span>SDLC</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="UML Tools" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%; background-color: var(--percentage-color);">
+            <span>UML Tools</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Business Analysis" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%; background-color: var(--percentage-color);">
+            <span>Business Analysis</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="User Experience (UX)" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%; background-color: var(--percentage-color);">
+            <span>User Experience (UX)</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Information Architecture" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%; background-color: var(--percentage-color);">
+            <span>Information Architecture</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Databases" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%; background-color: var(--percentage-color);">
+            <span>Databases</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Business Process Design" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%; background-color: var(--percentage-color);">
+            <span>Business Process Design</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Data Analysis" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%; background-color: var(--percentage-color);">
+            <span>Data Analysis</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="CRM" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%; background-color: var(--percentage-color);">
+            <span>CRM</span>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Soft Skills -->
+    <div class="accordion">
+      <button class="accordion-header">Soft Skills</button>
+      <div class="accordion-content">
+        <div class="skill-chart">
+          <div class="progress" role="progressbar" aria-label="Project Planning" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%; background-color: var(--percentage-color);">
+            <span>Project Planning</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Leadership" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%; background-color: var(--percentage-color);">
+            <span>Leadership</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Collaboration" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%; background-color: var(--percentage-color);">
+            <span>Collaboration</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Time Management" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%; background-color: var(--percentage-color);">
+            <span>Time Management</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Customer Satisfaction" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%; background-color: var(--percentage-color);">
+            <span>Customer Satisfaction</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Employee Relations" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%; background-color: var(--percentage-color);">
+            <span>Employee Relations</span>
+          </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Coaching & Mentoring Youth" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%; background-color: var(--percentage-color);">
+            <span>Coaching & Mentoring Youth</span>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="container mt-5">
+    <h2 class="text-center mb-4">Experience</h2>
+    <div class="row">
+      <!-- Junior Web Developer -->
+      <div class="col-md-12 mb-4">
+        <div class="card custom-border shadow-sm">
+          <div class="row g-0">
+            <div class="col-md-3 d-flex align-items-center justify-content-center bg-light">
+              <img src="assets/Gelmar-Logo-Block-Copy-Copy-Pretty-Jubar-scaled-1.jpg" alt="Gelmar Logo" class="img-fluid rounded-circle p-2" style="max-width: 50%;">
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h3 class="card-title">Junior Web Developer</h3>
+                <p class="card-text"><strong>Gelmar</strong> | July 2024 - Present</p>
+                <p class="card-text">
+                  I am currently employed as a Junior Web Developer at Gelmar, where I am actively involved in enhancing their website and optimizing user experience. My role has provided me with valuable exposure to the Adobe Magento 2 platform, a technology I initially had limited familiarity with but have swiftly mastered. I find great satisfaction in acquiring new skills and believe that this experience will significantly bolster my professional growth over the long term. I am committed to continuously advancing my knowledge, staying abreast of industry developments, and refining my proficiency in web development and UX/UI design. Seeking constructive feedback, engaging in ongoing learning opportunities, and actively participating in relevant projects are integral parts of my approach to further developing my expertise. I am enthusiastic about contributing to Gelmar's objectives and am eager to leverage my skills to drive impactful improvements in web development and user experience.
+                </p>
+                <a href="https://www.gelmar.co.za/" target="_blank" class="btn btn-primary mt-2">Visit Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Sports Coach -->
+      <div class="col-md-12 mb-4">
+        <div class="card custom-border shadow-sm">
+          <div class="row g-0">
+            <div class="col-md-3 d-flex align-items-center justify-content-center bg-light">
+              <img src="assets/unnamed.png" alt="Chelsea Preparatory School Logo" class="img-fluid rounded-circle p-2" style="max-width: 100%;">
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h3 class="card-title">Sports Coach</h3>
+                <p class="card-text"><strong>Chelsea Preparatory School</strong> | April 2024 - June 2024</p>
+                <p class="card-text">
+                  I believe that patience is one of the key attributes to success in both personal and professional life. While pursuing opportunities in the IT industry, I chose to channel my passion for sports into coaching, combining my belief in the importance of patience with my love for sport. During this time, I served as a sports coach for young athletes, working with Grade 3–5 soccer teams and Grade 1–2 rugby ball skills groups. In this role, I gained valuable experience in leadership, communication, and teamwork while fostering a positive and engaging environment for the children. The experience was incredibly rewarding, as it allowed me to connect with the kids, inspire their growth, and maintain a cheerful and patient demeanor.
+                </p>
+                <a href="https://www.chelseaprep.co.za/" target="_blank" class="btn btn-primary mt-2">Visit Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Salesman/Store Manager -->
+      <div class="col-md-12 mb-4">
+        <div class="card custom-border shadow-sm">
+          <div class="row g-0">
+            <div class="col-md-3 d-flex align-items-center justify-content-center bg-light">
+              <img src="https://via.placeholder.com/150" alt="Melville Cycles Logo" class="img-fluid rounded-circle p-2" style="max-width: 60%;">
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h3 class="card-title">Salesman/Store Manager</h3>
+                <p class="card-text"><strong>Melville Cycles</strong> | November 2023 - June 2024</p>
+                <p class="card-text">
+                  While pursuing a career in IT, I supported the day-to-day operations of my dad’s bicycle shop, gaining valuable experience in customer service, operational management, and team coordination. I was responsible for managing customer interactions, booking services, and handling inventory tasks such as ordering parts and conducting regular stocktakes to ensure we always met customer needs. On busy days, I rolled up my sleeves to assist with hands-on tasks like bike washing and even provided basic mechanical support when needed. In addition to overseeing daily operations, I handled the opening and closing of the shop, which included reconciling cash registers, card transactions, and preparing detailed financial reports to ensure accuracy and transparency. This role taught me the importance of attention to detail, problem-solving, and delivering exceptional customer experiences—all while keeping the business running smoothly. This experience not only honed my leadership and organizational skills but also reinforced my ability to adapt and thrive in dynamic environments.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="container mt-5">
+    <h2 class="text-center mb-4">Education & Courses</h2>
+    <div class="row">
+      <!-- University of Pretoria -->
+      <div class="col-md-12 mb-4">
+        <div class="card custom-border">
+          <div class="row g-0">
+            <div class="col-md-9">
+              <div class="card-body">
+                <h3 class="card-title">BIS Information Science</h3>
+                <p class="card-text"><strong>University of Pretoria</strong> | Graduated: 2023</p>
+                <a href="https://www.up.ac.za/" target="_blank" class="btn btn-primary mt-2">Visit Website</a>
+              </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-center justify-content-center">
+              <img src="assets/up_logo-650x479.png" alt="University of Pretoria Logo" class="img-fluid rounded-end image-dynamic-height">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Michaelhouse -->
+      <div class="col-md-12 mb-4">
+        <div class="card custom-border">
+          <div class="row g-0">
+            <div class="col-md-9">
+              <div class="card-body">
+                <h3 class="card-title">Matric in Science, IT & EGD</h3>
+                <p class="card-text"><strong>Michaelhouse</strong> | Matriculated: 2019</p>
+                <a href="https://www.michaelhouse.org/" target="_blank" class="btn btn-primary mt-2">Visit Website</a>
+              </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-center justify-content-center">
+              <img src="assets/Mhs_badge.png" alt="Michaelhouse Logo" class="img-fluid rounded-end image-dynamic-height">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Udemy Courses -->
+      <div class="col-md-12 mb-4">
+        <div class="card custom-border">
+          <div class="row g-0">
+            <div class="col-md-9">
+              <div class="card-body">
+                <h3 class="card-title">Udemy Courses</h3>
+                <ul class="list-unstyled">
+                  <li><strong>React Native & Expo: Build a Modern eCommerce App Fast 2025:</strong>
+                    <ul>
+                      <li>React Native, Expo, MangoDB, Express, Nativewind</li>
+                    </ul>
+                  </li>
+                  <li><strong>The Complete Web Developer Course 3.0:</strong>
+                    <ul>
+                      <li>HTML 5, CSS 3, JavaScript, jQuery, Bootstrap 5, WordPress, PHP, MySQL, APIs, Linux Command Line, Python, SEO,</li>
+                    </ul>
+                  </li>
+                  <li><strong>Data Analysis & Business Intelligence: SQL MySQL Power BI</strong>
+                    <ul>
+                      <li>SQL, MySQL, Power BI, Microsoft SQL, PostgreSQL, Tableau</li>
+                    </ul>
+                  </li>
+                  <li><strong>Blazor CRUD Jumpstart:</strong>
+                    <ul>
+                      <li>Blazor and Entity Framework Core in .NET 8</li>
+                    </ul>
+                  </li>
+                </ul>
+                <a href="https://www.udemy.com/" target="_blank" class="btn btn-primary mt-2">Visit Udemy</a>
+              </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-center justify-content-center">
+              <img src="assets/udemylogo.png" alt="Udemy Logo" class="img-fluid rounded-end image-dynamic-height">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Projects/Contributions Section -->
+  <section id="projects">
+    <h2>Projects & Contributions</h2>
+    <h3>Gelmar's New Look</h3>
+    <p>During my time at Gelmar, I undertook a series of thoughtful and strategic enhancements to their website, with the primary goals of significantly improving the user experience and elevating its visual sophistication. Below, you will find a collection of before-and-after representations that vividly illustrate the impact of these changes. Each example showcases the evolution of key elements, highlighting the careful design decisions and attention to detail that have contributed to the site's overall improvement. To explore these visuals, use the slider to seamlessly transition between the original and updated versions, offering a clear perspective on the transformative journey of the website.</p>
+    <!-- Slider 1 -->
+    <div class="before-after-slider slider1">
+      <div class="slider-container">
+        <input type="range" min="0" max="100" value="50" class="slider" data-target="slider1">
+        <div class="slider-images">
+          <img src="assets/before.png" alt="Before" class="before-image">
+          <img src="assets/after1.png" alt="After" class="after-image">
+        </div>
+      </div>
+    </div>
+    <!-- Slider 2 -->
+    <div class="before-after-slider slider2">
+      <div class="slider-container">
+        <input type="range" min="0" max="100" value="50" class="slider" data-target="slider2">
+        <div class="slider-images">
+          <img src="assets/before1.png" alt="Before" class="before-image">
+          <img src="assets/after2.png" alt="After" class="after-image">
+        </div>
+      </div>
+    </div>
+    <!-- Slider 3 -->
+    <div class="before-after-slider slider3">
+      <div class="slider-container">
+        <input type="range" min="0" max="100" value="50" class="slider" data-target="slider3">
+        <div class="slider-images">
+          <img src="assets/before2.png" alt="Before" class="before-image">
+          <img src="assets/after3.png" alt="After" class="after-image">
+        </div>
+      </div>
+    </div>
+    <!-- Slider 4 -->
+    <div class="before-after-slider slider4">
+      <div class="slider-container">
+        <input type="range" min="0" max="100" value="50" class="slider" data-target="slider4">
+        <div class="slider-images">
+          <img src="assets/before4.png" alt="Before" class="before-image">
+          <img src="assets/after10.png" alt="After" class="after-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Videos Section -->
+  <section id="videos">
+    <h2>Enhancing User Experience Through Design</h2>
+    <p>In this section, I invite you to explore a series of videos that demonstrate the functionality and enhancements I have introduced to key pages of the Gelmar website. These videos provide an in-depth look at the custom modules and animations I have developed with the primary goal of elevating the user experience. From engaging animations on the homepage designed to captivate and guide users, to the implementation of a custom quote system module that streamlines the process for generating personalized quotes, each feature reflects a commitment to both usability and aesthetic appeal. Additionally, you will see improvements made to the product page, which now offers a more intuitive and visually appealing interface, as well as a custom categories page that enhances navigation and accessibility. These innovations not only improve the site's performance but also ensure a seamless and enjoyable journey for every visitor.</p>
+    <div class="video-grid">
+      <!-- Video Thumbnail 1 -->
+      <div class="video-thumbnail" data-video="Home Page animations.mp4">
+        <img src="assets/after1.png" alt="Video Thumbnail">
+        <h4>Home Page Animations</h4>
+      </div>
+      <!-- Video Thumbnail 2 -->
+      <div class="video-thumbnail" data-video="Quote System.mp4">
+        <img src="assets/after1.png" alt="Video Thumbnail">
+        <h4>Custom Quote System Module</h4>
+      </div>
+      <!-- Video Thumbnail 3 -->
+      <div class="video-thumbnail" data-video="Product Page.mp4">
+        <img src="assets/product page.png" alt="Video Thumbnail">
+        <h4>Product Page Improvements</h4>
+      </div>
+      <!-- Video Thumbnail 4 -->
+      <div class="video-thumbnail" data-video="Categories Page.mp4">
+        <img src="assets/Categories.png" alt="Video Thumbnail">
+        <h4>Custom Categories Page</h4>
+      </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal">
+      <span class="close-modal">&times;</span>
+      <video id="modal-video" controls autoplay></video>
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact</h2>
+    <form action="#" method="POST" class="contact-form row g-3 justify-content-center">
+      <!-- Name Input -->
+      <div class="col-md-6">
+        <div class="form-floating">
+          <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+          <label for="name">Your Name</label>
+        </div>
+      </div>
+
+      <!-- Email Input -->
+      <div class="col-md-6">
+        <div class="form-floating">
+          <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+          <label for="email">Your Email</label>
+        </div>
+      </div>
+
+      <!-- Message Input -->
+      <div class="col-md-12">
+        <div class="form-floating">
+          <textarea id="message" name="message" class="form-control" style="height: 20vh;" placeholder="Your Message" required></textarea>
+          <label for="message">This form is for display purposes only</label>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="col-md-12 text-center">
+        <button type="submit" class="btn btn-primary px-4">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+  <footer class="pt-3 mt-4 text-muted border-top text-center">
+      <p>&copy; 2025 Rorke Melville. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

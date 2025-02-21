@@ -154,7 +154,7 @@ a {
   opacity: 1; 
   transform: translateY(0); 
 }
-/* Hero Section Mobile Adjustments */
+/* Mobile Adjustments */
 @media (max-width: 767.98px) {
   body{
     width: 95% !important;

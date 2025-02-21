@@ -154,6 +154,41 @@ a {
   opacity: 1; 
   transform: translateY(0); 
 }
+/* Hero Section Mobile Adjustments */
+@media (max-width: 767.98px) {
+  body{
+    width: 95% !important;
+    margin: 0 auto !important; 
+  }
+  #hero .col-md-4 {
+    display: none !important; 
+  }
+  #hero .col-md-8 {
+    width: 100% !important; 
+    padding: 1rem !important; 
+  }
+  #hero .hero-content .col-8 {
+    width: 100% !important; 
+    padding: 0 !important; 
+  }
+  #hero .btn-learn {
+    width: 100% !important; 
+  }
+  #hero {
+    height: auto !important; 
+    min-height: unset !important; 
+  }
+  .hero-content h1 {
+    font-size: 2rem !important; 
+  }
+  .hero-content p {
+    font-size: 1.5rem !important; 
+  }
+  .btn-primary .mt-2{
+    margin: 0 auto !important;
+    align-items: center !important;
+  }
+}
 /* Apply the wobble animation */
 #wobble {
   animation: wobble 1s ease-in-out;

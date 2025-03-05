@@ -33,10 +33,9 @@ CV-Site/
 2. Navigate Sections: Use the navigation bar to jump between sections or scroll manually.
 
 ## Future Improvements
-Backend Integration: Add a server-side solution (e.g., Node.js, PHP) to process the contact form and send emails.
-Animations: Incorporate more CSS or JavaScript animations for a dynamic feel.
-Accessibility: Enhance ARIA labels and keyboard navigation for better accessibility.
-Content Updates: Regularly update the CV content to reflect new experiences and skills.
+- Backend Integration: Add a server-side solution (e.g., Node.js, PHP) to process the contact form and send emails.
+- Accessibility: Enhance ARIA labels and keyboard navigation for better accessibility.
+- Content Updates: Regularly update the CV content to reflect new experiences and skills.
 
 ## Credits
 Built by Rorke Melville using HTML, CSS, JavaScript, and Bootstrap.

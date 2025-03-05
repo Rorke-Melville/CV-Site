@@ -10,7 +10,6 @@ This project is a personal portfolio website designed to present my CV in an eng
 - Dynamic Content: JavaScript enhances interactivity, such as smooth scrolling and toggleable sections (e.g., the mobile menu).
 - Modern Styling: Custom CSS paired with Bootstrap provides a clean, professional look with subtle hover effects.
 - Contact Form: A non-functional form for visitors to send messages directly from the site (Note: Requires backend integration for full functionality).
-- Downloadable CV: A link to download a traditional CV in PDF format for convenience.
 
 ## Technologies Used
 - HTML5: Structures the content and ensures semantic markup for accessibility.
